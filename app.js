@@ -14,4 +14,4 @@ app.engine('html', ejs.renderFile);
 
 app.use(index);
 
-app.listen(post, () => console.log('Example app listening on port 3000!'));
+app.listen(port, () => console.log('Example app listening on port 3000!'));
