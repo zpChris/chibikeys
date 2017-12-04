@@ -1,9 +1,64 @@
 <!doctype html>
 <html>
     <head>
-        <title>My page</title>
+        <title>Chibi Keys</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles/index.css"))/>
+        <link rel="stylesheet" href="styles/typography.css"))/>
     </head>
     <body>
-        Hello
+
+        <!-- HEADER -->
+
+        <nav class="header">
+            <span class="header-logo">
+                <a href="/">Chibi Keys</a>
+            </span>
+
+            <!-- Header when screen size is <768px -->
+            <div class="header-dropdown-container">
+                <div class="header-dropdown-icon">
+                    &#9776;
+                </div>
+                <div class="header-dropdown">
+                    <!-- Has id of store-dropdown for specialized styling -->
+                    <div class="header-dropdown-item" id="store-dropdown">
+                        <a href="/store">Store</a>
+                    </div>
+                    <div class="header-dropdown-item">
+                        <a href="/keycaps">Keycaps</a>
+                    </div>
+                    <div class="header-dropdown-item">
+                        <a href="/our-commitment">Our Commitment</a>
+                    </div>
+                    <div class="header-dropdown-item">
+                        <a href="/blog">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regular header when screen size is >768px -->
+            <div class="header-menu">
+                <!-- Has id of store-menu for specialized styling -->
+                <div class="header-menu-item">
+                    <a href="/store" id="store-menu">Store</a>
+                </div>
+                <div class="header-menu-item">
+                    <a href="/blog">Blog</a>
+                </div>
+                <div class="header-menu-item">
+                    <a href="/our-commitment">Our Commitment</a>
+                </div>
+                <div class="header-menu-item">
+                    <a href="/keycaps">Keycaps</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Links to index.js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
     </body>
 </html>
+

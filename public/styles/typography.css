@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Various typography styles */
+
+/* Chibi Keys logo */
+.header-logo {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ff6c47;
+}
+
+/* Menu when screen is >768px */
+.header-menu-item {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #83858b;
+}
+
+/* Specialized typography for the store button */
+#store-menu {
+    font-size: 22.5px;
+    font-weight: 700;
+    color: #9fd8cb;
+}
+
+/* Dropdown when screen is <=768px */
+.header-dropdown-item {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #83858b;
+}
+
+/* 3 line icon */
+.header-dropdown-icon {
+    font-size: 35px;
+}
+
+/* Specialized typography for the store button */
+#store-dropdown {
+    font-size: 20px;
+    font-weight: 700;
+    color: #9fd8cb;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}

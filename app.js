@@ -13,5 +13,6 @@ app.set('view engine', 'ejs');
 app.engine('html', ejs.renderFile);
 
 app.use(index);
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => console.log('Example app listening on port 3000!'));

@@ -1,0 +1,125 @@
+/* container */
+
+/* TODO optimize for mobile */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* HEADER */
+
+.header {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+}
+
+
+/* REGULAR MENU - Header when screen size is >768px */
+
+.header-menu {
+    float: right;
+    padding: 0 40px 0 0;
+}
+
+.header-menu-item {
+    float: right;
+    margin-left: 50px;
+}
+
+.header-logo {
+    float: left;
+    padding: 0 0 0 40px;
+}
+
+/* Specialized store button styling */
+#store-menu {
+    margin-left: 5px;
+    padding: 6px 15px;
+    border: 1px solid #9fd8cb;
+}
+
+#store-menu:hover {
+    color: white;
+    background-color: #9fd8cb;
+}
+
+
+/* DROPDOWN MENU - Header when screen size is <768px */
+
+.header-dropdown-container {
+    display: none; /* This line prevents the dropdown from being shown regularly */
+    position: relative;
+    margin-right: 40px;
+}
+
+.header-dropdown-icon {
+    float: right;
+    user-select: none;
+    cursor: pointer;
+}
+
+.header-dropdown {
+    line-height: 32px;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 64px;
+    right: 0;
+}
+
+.header-dropdown-item {
+    padding: 15px 30px;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+
+.header-dropdown-item:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+/* Specialized store button styling */
+#store-dropdown {
+    background-color: rgba(161, 217, 204, 0.1);
+}
+
+#store-dropdown:hover {
+    background-color: rgba(161, 217, 204, 0.25);
+}
+
+/* Regular header menu items closer together at certain width (900px) */
+@media screen and (max-width: 900px) {
+    .header-menu-item {
+        margin-left: 30px;
+    }
+}
+
+/* CSS switch to dropdown at 768px */
+@media screen and (max-width: 768px) {
+
+    .header-dropdown-container {
+        display: block;
+    }
+
+    .header-dropdown {
+        display: none;
+    }
+    
+    .header-menu {
+        display: none;
+    }
+}
+
+/* Removing general a styling */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits color of parent */
+}
