@@ -36,6 +36,16 @@
     font-size: 35px;
 }
 
+/* Header logo and dropdown icon decreases size at 320px */
+@media screen and (max-width: 320px) {
+    .header-logo {
+        font-size: 20px;
+    }
+    .header-dropdown-icon {
+        font-size: 20px;
+    }
+}
+
 /* Specialized typography for the store button */
 #store-dropdown {
     font-size: 20px;
