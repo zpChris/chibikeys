@@ -1,18 +1,26 @@
-/* container */
-
-/* TODO optimize for mobile */
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
+body {
+    margin: 0;
 }
 
-/* HEADER */
+/* container */
+.container {
+    margin: 0 8px;
+}
+
+/* container, will have background gif at 850px */
+.index-frontpage-container {
+    background: none; /* TODO: PUT SOMETHING HERE? */
+}
+
+/*
+
+    HEADER
+    
+*/
 
 .header {
     margin: 0 auto;
+    padding-top: 10px;
     position: relative;
     display: block;
     width: 100%;
@@ -43,6 +51,7 @@
     margin-left: 5px;
     padding: 6px 15px;
     border: 1px solid #9fd8cb;
+    transition: 0.2s ease;
 }
 
 #store-menu:hover {
@@ -57,6 +66,7 @@
     display: none; /* This line prevents the dropdown from being shown regularly */
     position: relative;
     margin-right: 40px;
+    z-index: 999999 !important;
 }
 
 .header-dropdown-icon {
@@ -79,6 +89,7 @@
     -moz-transition: background-color 0.25s ease-out;
     -o-transition: background-color 0.25s ease-out;
     transition: background-color 0.25s ease-out;
+    background: white;
 }
 
 .header-dropdown-item:hover {
@@ -88,7 +99,7 @@
 
 /* Specialized store button styling */
 #store-dropdown {
-    background-color: rgba(161, 217, 204, 0.1);
+    background-color: rgba(161, 217, 204, 0.1); /* TODO: is transparent, might not be an issue but make sure */
 }
 
 #store-dropdown:hover {
@@ -98,7 +109,7 @@
 /* Regular header menu items closer together at certain width (900px) */
 @media screen and (max-width: 900px) {
     .header-menu-item {
-        margin-left: 30px;
+        margin-left: 28px;
     }
 }
 
@@ -116,6 +127,286 @@
     .header-menu {
         display: none;
     }
+}
+
+/*
+
+    INDEX SLIDESHOW W/ TEXT
+    
+*/
+
+/* column container */
+.column-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* General row/column formation */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Row distance from top */
+.row {
+    margin-top: 75px;
+}
+
+/* Column height */
+.column {
+    height: 400px;
+}
+
+/* LEFT SIDE OF INDEX */
+/* TODO: CREATE LINKS FOR IMAGES TO GO AND BUY THEM, SOME SORT OF HOVER SYSTEM */
+.index-slideshow-image {
+    position: relative;
+    float: left;
+    width: 45%;
+}
+
+/* Slideshow images */
+.index-slides {
+    margin: 0 auto;
+    width: 75%;
+    display: none;
+    border-radius: 25px;
+    /* TODO: These don't work because the js doesn't match */
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Corresponding title to slideshow image */
+.index-slideshow-image-title {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Arrow keys for left and right */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 3px;
+}
+
+.prev:hover, .next:hover {
+    background: #eeeeee;
+}
+
+/* RIGHT SIDE OF INDEX */
+
+/* Column container */
+.index-slideshow-text {
+    float: right;
+    width: 45%;
+}
+
+/* Header of frontpage */
+#index-slideshow-text-header {
+    margin-bottom: 15px;
+}
+
+/* Short body of frontpage */
+#index-slideshow-text-body {
+    margin-bottom: 25px;
+}
+
+/* Frontpage button for keycaps */
+
+#index-slideshow-text-button {
+    padding: 6px 15px;
+    border: 1px solid #d39fd8; /* Color still has to be discovered, currently a placeholder */
+    transition: 0.2s ease;
+}
+/* Hover for frontpage button */
+#index-slideshow-text-button:hover {
+    color: white;
+    background-color: #cc73d6;
+    border: 1px solid #cc73d6;
+}
+
+/* FRONTPAGE DESIGN OPTIMIZATIONS FOR DIFFERENT SCREEN SIZES */
+
+/* Frontpage text for the design of <850px */
+.index-frontpage-text {
+    display: none;
+}
+
+/* Frontpage header text */
+.index-frontpage-large-text {
+    margin: 30px 0;
+}
+/* Frontpage body text */
+.index-frontpage-medium-text {
+    margin: 30px 0;
+}
+/* Frontpage text button */
+.index-frontpage-text-button {
+    padding: 6px 15px;
+    border: 1px solid #d39fd8; /* Color still has to be discovered, currently a placeholder */
+    transition: 0.2s ease;
+}
+.index-frontpage-text-button:hover {
+    color: white;
+    background-color: #cc73d6;
+    border: 1px solid #cc73d6;
+}
+/* Form design */
+input[type=text] {
+    width: 325px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 2px solid #ff6c47;
+}
+/* Subscription button paired with email form */
+.index-frontpage-subscription-button {
+    margin-left: 5px;
+    padding: 13px 20px;
+    color: white;
+    background-color: #cc73d6;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+.index-frontpage-subscription-button:hover {
+    background-color: #c34fcf;
+}
+/* Contains the type box and subscription button */
+#subscription-container {
+    margin-top: 30px;
+    display: block;
+}
+
+/* Shrink column container, height at 1000px */
+@media screen and (max-width: 1000px) {
+    .column-container {
+        max-width: 800px;
+    }
+    .column {
+        height: 350px;
+    }
+}
+
+/* LARGE REDESIGN, removal of columns, slideshow below central text */
+@media screen and (max-width: 850px) {
+    /* Remove all column content */
+    .column-container {
+        display: none;
+    }
+    /* Frontpage text container */
+    .index-frontpage-text {
+        display: block;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+        margin: 80px 0;
+        height: 350px;
+    }
+}
+
+/* Changing margins, subscription box fullscreen */
+@media screen and (max-width: 550px) {
+    /* Remove all column content */
+    .column-container {
+        display: none;
+    }
+    /* Frontpage text container */
+    .index-frontpage-text {
+        display: block;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+        margin: 20px 0;
+        height: 450px;
+    }
+    /* Input form taking up full screen */
+    input[type=text] {
+        width: 100%;
+    }
+    /* Subscription button paired with email form */
+    .index-frontpage-subscription-button {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: block;
+    }
+    
+}
+
+/*
+
+    INDEX TEXT BLOCK SECTION, CAN BE APPLIED TO OTHER TEXT SECTIONS
+
+*/
+
+.index-text-container {
+    padding: 75px 75px;
+    text-align: center;
+}
+
+.index-large-text {
+    margin: 30px 0;
+}
+
+.index-medium-text {
+    margin-bottom: 40px;
+}
+
+.index-large-text-button {
+    padding: 6px 15px;
+    border: 1px solid #ff6c47;
+    transition: 0.2s ease;
+}
+
+.index-large-text-button:hover {
+    color: white;
+    background-color: #ff6c47;
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 600px) {
+    .index-text-container {
+        padding: 75px 25px;
+        text-align: center;
+    }
+}
+
+/* Prevent selection of element */
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 /* Removing general a styling */
