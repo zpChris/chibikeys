@@ -11,10 +11,14 @@
 }
 
 /* Menu when screen is >768px */
-.header-menu-item {
+.header-menu-item > a {
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
     color: #83858b;
+}
+
+.header-menu-item > a:hover {
+    color: #222222;
 }
 
 /* Specialized typography for the store button */
@@ -36,16 +40,6 @@
     font-size: 35px;
 }
 
-/* Header logo and dropdown icon decreases size at 320px */
-@media screen and (max-width: 320px) {
-    .header-logo {
-        font-size: 20px;
-    }
-    .header-dropdown-icon {
-        font-size: 20px;
-    }
-}
-
 /* Specialized typography for the store button */
 #store-dropdown {
     font-size: 20px;
@@ -53,6 +47,178 @@
     color: #9fd8cb;
 }
 
-h1 {
+/* Header logo and dropdown icon decreases size at 320px */
+@media screen and (max-width: 320px) {
+    .header-logo {
+        font-size: 25px;
+    }
+    .header-dropdown-icon {
+        font-size: 25px;
+    }
+}
+
+/* INDEX SLIDESHOW W/ TEXT */
+
+/* Product title of image */
+.index-slideshow-image-title {
     font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Right side text styling */
+
+#index-slideshow-text-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#index-slideshow-text-body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #83858b;
+    line-height: 1.6;
+}
+
+
+#index-slideshow-text-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27.5px;
+    font-weight: 700;
+    color: #d39fd8;
+}
+
+/* General form input size, especially for email subscription on front page */
+input[type=text] {
+    font-size: 20px;
+}
+.index-frontpage-subscription-button {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* FOLLOWING THREE CLASSES ONLY APPEAR <850PX */
+
+/* Large text block */
+.index-frontpage-large-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+/* Medium text block */
+.index-frontpage-medium-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #83858b;
+}
+/* Frontpage text button */
+.index-frontpage-text-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #d39fd8;
+}
+
+/* FRONTPAGE DESIGN OPTIMIZATIONS FOR DIFFERENT SCREEN SIZES */
+
+/* Decrease all left-side text at 1000px */
+@media screen and (max-width: 1000px) {
+    #index-slideshow-text-header {
+        font-size: 50px;
+    }
+    #index-slideshow-text-body {
+        font-size: 20px;
+    }
+    #index-slideshow-text-button {
+        font-size: 25px;
+    }
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
+    /* Large text block */
+    .index-frontpage-large-text {
+        font-size: 45px;
+    }
+    /* Medium text block */
+    .index-frontpage-medium-text {
+        font-size: 22.5px;
+    }
+    /* Frontpage text button */
+    .index-frontpage-text-button {
+        font-size: 27.5px;
+    }
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 600px) {
+    /* Large text block */
+    .index-frontpage-large-text {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 550px) {
+    input[type=text] {
+        font-size: 20px;
+    }
+    /* Medium text block */
+    .index-frontpage-medium-text {
+        font-size: 20px;
+    }
+
+}
+
+/*
+
+    INDEX LARGE TEXT BLOCK
+    
+*/
+
+.index-large-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    color: black;
+}
+
+.index-medium-text {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 400;
+    color: #83858b;
+}
+
+.index-large-text-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #ff6c47;
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
+    .index-large-text {
+        font-size: 60px;
+    }
+
+    .index-large-text-button {
+        font-size: 30px;
+    }
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 600px) {
+    .index-large-text {
+        font-size: 50px;
+    }
+
+    .index-large-text-button {
+        font-size: 25px;
+    }
 }

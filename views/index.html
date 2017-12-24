@@ -9,55 +9,140 @@
     </head>
     <body>
 
-        <!-- HEADER -->
+        <div class="index-frontpage-container">
+            <div class="container">
 
-        <nav class="header">
-            <span class="header-logo">
-                <a href="/">Chibi Keys</a>
-            </span>
+                <!--
+                    
+                    HEADER
+                
+                -->
+        
+                <nav class="header">
+                    <span class="header-logo">
+                        <a href="/">Chibi Keys</a>
+                    </span>
+        
+                    <!-- Header when screen size is <768px -->
+                    <div class="header-dropdown-container">
+                        <div class="header-dropdown-icon">
+                            &#9776;
+                        </div>
+                        <!-- The div's are outside in the a's in this section so the whole button is a link -->
+                        <div class="header-dropdown">
+                            <!-- Has id of store-dropdown for specialized styling -->
+                            <a href="/store">
+                                <div class="header-dropdown-item" id="store-dropdown">Store</div>
+                            </a>
+                            <a href="/keycaps">
+                                <div class="header-dropdown-item">Keycaps</div>
+                            </a>
+                            <a href="/our-commitment">
+                                <div class="header-dropdown-item">Our Commitment</div>
+                            </a>
+                            <a href="/blog">
+                                <div class="header-dropdown-item">Blog</div>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Regular header when screen size is >768px -->
+                    <div class="header-menu">
+                        <!-- Has id of store-menu for specialized styling -->
+                        <div class="header-menu-item">
+                            <a href="/store" id="store-menu">Store</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/blog">Blog</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/our-commitment">Our Commitment</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/keycaps">Keycaps</a>
+                        </div>
+                    </div>
+                </nav>
+        
+                <!-- 
+                    
+                    INDEX SLIDESHOW W/ TEXT
+                
+                -->
+        
+                <!-- Greater than 850px, column form -->
+                <div class="column-container">
+                    <div class="row">
+                        <!-- Slideshow w/ product images and titles (left side of index) -->
+                        <div class="column index-slideshow-image">
+                            <!-- Keycap product names -->
+                            <div class="index-slideshow-image-title">Product One</div>
+                            <div class="index-slideshow-image-title">Product Two</div>
+                            <div class="index-slideshow-image-title">Product Three</div>
+                            <!-- Keycap images -->
+                            <img src="assets/keycap_image.png" class="index-slides">
+                            <img src="assets/keycap_image_2.png" class="index-slides">
+                            <img src="assets/keycap_image_3.png" class="index-slides">
+                            <!-- Left and right arrows -->
+                            <a class="prev no-select" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next no-select" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+        
+                        <!-- Right side of index - text of slideshow -->
+                        <div class="column index-slideshow-text">
+                            <div id="index-slideshow-text-header">
+                                We Make
+                                <br>Cool Keycaps
+                            </div>
+                            <div id="index-slideshow-text-body">
+                                Chibi Keys makes fun keycaps that use high-quality materials!
+                            </div>
+                            <!-- Call-to-action button -->
+                            <a href="/keycaps" id="index-slideshow-text-button">Find Keycaps</a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Header when screen size is <768px -->
-            <div class="header-dropdown-container">
-                <div class="header-dropdown-icon">
-                    &#9776;
+                <!-- Less than 850px, text then image form (text and slideshow are separate, no columns) -->
+                <div class="index-frontpage-text">
+                    <!-- Large text -->
+                    <div class="index-frontpage-large-text">
+                        We make cool keycaps
+                    </div>
+                    <!-- Medium text -->
+                    <div class="index-frontpage-medium-text">
+                        Chibi Keys makes fun keycaps that use high-quality materials! 
+                    </div>
+                    <!-- Call-to-action button -->
+                    <a href="/keycaps" class="index-frontpage-text-button">Find Keycaps</a>
+                    <!-- Enter email to subscribe for updates -->
+                    <div id="subscription-container">
+                        <form>
+                            <input type="text" placeholder="Enter your email address">
+                            <a href="" class="index-frontpage-subscription-button">Subscribe</a>
+                        </form>
+                    </div>
                 </div>
-                <!-- The div's are outside in the a's in this section so the whole button is a link -->
-                <div class="header-dropdown">
-                    <!-- Has id of store-dropdown for specialized styling -->
-                    <a href="/store">
-                        <div class="header-dropdown-item" id="store-dropdown">Store</div>
-                    </a>
-                    <a href="/keycaps">
-                        <div class="header-dropdown-item">Keycaps</div>
-                    </a>
-                    <a href="/our-commitment">
-                        <div class="header-dropdown-item">Our Commitment</div>
-                    </a>
-                    <a href="/blog">
-                        <div class="header-dropdown-item">Blog</div>
-                    </a>
+
+
+                <!--
+                    
+                    LARGE INDEX TEXT BLOCK (OUR COMMITMENT TEXT BLOCK)
+                
+                -->
+                <div class="index-text-container">
+                    <p class="index-large-text">
+                        We Donate
+                    </p>
+                    <p class="index-medium-text">
+                        Chibi Keys is committed to helping less fortunate communites.
+                        We promise to donate 50% of our sales to improve the lives of others.
+                    </p>
+                    <a href="/our-commitment" class="index-large-text-button">Our Commitment</a>
                 </div>
+
             </div>
-
-            <!-- Regular header when screen size is >768px -->
-            <div class="header-menu">
-                <!-- Has id of store-menu for specialized styling -->
-                <div class="header-menu-item">
-                    <a href="/store" id="store-menu">Store</a>
-                </div>
-                <div class="header-menu-item">
-                    <a href="/blog">Blog</a>
-                </div>
-                <div class="header-menu-item">
-                    <a href="/our-commitment">Our Commitment</a>
-                </div>
-                <div class="header-menu-item">
-                    <a href="/keycaps">Keycaps</a>
-                </div>
-            </div>
-        </nav>
-
-
+        </div>
 
         <!-- Links to index.js -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
