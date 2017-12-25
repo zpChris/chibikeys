@@ -127,7 +127,7 @@ input[type=text] {
 /* FRONTPAGE DESIGN OPTIMIZATIONS FOR DIFFERENT SCREEN SIZES */
 
 /* Decrease all left-side text at 1000px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     #index-slideshow-text-header {
         font-size: 50px;
     }
