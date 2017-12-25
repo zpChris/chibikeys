@@ -368,7 +368,9 @@ input[type=text]:focus {
 */
 
 .index-text-container {
-    padding: 75px 125px;
+    margin: 0 auto;
+    padding: 75px 0;
+    width: 70%;
     text-align: center;
 }
 

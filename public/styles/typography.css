@@ -126,6 +126,27 @@ input[type=text] {
 
 /* FRONTPAGE DESIGN OPTIMIZATIONS FOR DIFFERENT SCREEN SIZES */
 
+/* LARGER */
+/* Decrease all left-side text at 1200px */
+@media screen and (min-width: 1200px) {
+    #index-slideshow-text-header {
+        font-size: 60px;
+    }
+    #index-slideshow-text-button {
+        font-size: 30px;
+    }
+}
+/* Decrease all left-side text at 1100px */
+@media screen and (min-width: 1100px) {
+    #index-slideshow-text-header {
+        font-size: 60px;
+    }
+    #index-slideshow-text-button {
+        font-size: 30px;
+    }
+}
+
+/* SMALLER */
 /* Decrease all left-side text at 1000px */
 @media screen and (max-width: 1000px) {
     #index-slideshow-text-header {
@@ -220,5 +241,20 @@ input[type=text] {
 
     .index-large-text-button {
         font-size: 25px;
+    }
+}
+
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 450px) {
+    .index-large-text {
+        font-size: 40px;
+    }
+
+    .index-medium-text {
+        font-size: 17.5px;
+    }
+
+    .index-large-text-button {
+        font-size: 22.5px;
     }
 }
