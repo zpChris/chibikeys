@@ -139,8 +139,8 @@ input[type=text] {
     }
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 700px */
-@media screen and (max-width: 700px) {
+/* Reducing font sizes so it fits on frontpage screen at 750px */
+@media screen and (max-width: 750px) {
     /* Large text block */
     .index-frontpage-large-text {
         font-size: 45px;
@@ -155,15 +155,15 @@ input[type=text] {
     }
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 650px */
-@media screen and (max-width: 650px) {
+/* Reducing font sizes so it fits on frontpage screen at 700px */
+@media screen and (max-width: 700px) {
     /* Large text block */
     .index-frontpage-large-text {
         font-size: 40px;
     }
 }
-/* Reducing font sizes so it fits on frontpage screen at 600px */
-@media screen and (max-width: 600px) {
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
     input[type=text] {
         font-size: 20px;
     }
