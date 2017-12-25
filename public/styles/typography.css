@@ -104,7 +104,7 @@ input[type=text] {
 /* Large text block */
 .index-frontpage-large-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 47.5px;
     font-weight: 700;
     color: black;
 }
@@ -128,9 +128,6 @@ input[type=text] {
 
 /* Decrease all left-side text at 1000px */
 @media screen and (max-width: 1000px) {
-    #index-slideshow-text-header {
-        font-size: 50px;
-    }
     #index-slideshow-text-body {
         font-size: 20px;
     }
