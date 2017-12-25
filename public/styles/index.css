@@ -391,11 +391,14 @@ input[type=text]:focus {
     background-color: #ff6c47;
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 600px */
-@media screen and (max-width: 600px) {
-    .index-text-container {
-        padding: 75px 25px;
-        text-align: center;
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
+    .index-large-text {
+        font-size: 60px;
+    }
+
+    .index-large-text-button {
+        font-size: 30px;
     }
 }
 

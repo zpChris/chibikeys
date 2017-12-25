@@ -127,7 +127,7 @@ input[type=text] {
 /* FRONTPAGE DESIGN OPTIMIZATIONS FOR DIFFERENT SCREEN SIZES */
 
 /* Decrease all left-side text at 1000px */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1000px) {
     #index-slideshow-text-header {
         font-size: 50px;
     }
@@ -139,8 +139,8 @@ input[type=text] {
     }
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 750px */
-@media screen and (max-width: 750px) {
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
     /* Large text block */
     .index-frontpage-large-text {
         font-size: 45px;
@@ -155,15 +155,14 @@ input[type=text] {
     }
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 700px */
-@media screen and (max-width: 700px) {
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 600px) {
     /* Large text block */
     .index-frontpage-large-text {
         font-size: 40px;
     }
 }
-/* Reducing font sizes so it fits on frontpage screen at 650px */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
     input[type=text] {
         font-size: 20px;
     }
@@ -202,8 +201,8 @@ input[type=text] {
     color: #ff6c47;
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 700px */
-@media screen and (max-width: 700px) {
+/* Reducing font sizes so it fits on frontpage screen at 650px */
+@media screen and (max-width: 650px) {
     .index-large-text {
         font-size: 60px;
     }
@@ -213,14 +212,10 @@ input[type=text] {
     }
 }
 
-/* Reducing font sizes so it fits on frontpage screen at 650px */
-@media screen and (max-width: 650px) {
+/* Reducing font sizes so it fits on frontpage screen at 600px */
+@media screen and (max-width: 600px) {
     .index-large-text {
         font-size: 50px;
-    }
-
-    .index-medium-text {
-        font-size: 17.5px;
     }
 
     .index-large-text-button {
