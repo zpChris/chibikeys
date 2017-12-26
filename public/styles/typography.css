@@ -98,6 +98,10 @@ input[type=text] {
     font-family: sans-serif;
     font-size: 20px;
 }
+.index-frontpage-subscribe-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
 
 /* FOLLOWING THREE CLASSES ONLY APPEAR <850PX */
 
@@ -205,6 +209,7 @@ input[type=text] {
     font-size: 75px;
     font-weight: 700;
     color: black;
+    text-align: center;
 }
 
 .index-medium-text {
@@ -256,5 +261,69 @@ input[type=text] {
 
     .index-large-text-button {
         font-size: 22.5px;
+    }
+}
+
+/* 
+
+    GALLERY WITH IMAGES OF PRODUCTS
+
+*/
+
+/* Image title text */
+.gallery-image-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    color: white;
+}
+
+/* Description text */
+.gallery-image-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    line-height: 1.8;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
+/* Link to buy text */
+.gallery-image-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
+/* INDEX GALLERY SCALING SECTION */
+
+/* Changing from three columns to two columns */
+@media screen and (max-width: 1000px) {
+    /* Image title text */
+    .gallery-image-name {
+        font-size: 3.5vw;
+    }
+
+    /* Description text */
+    .gallery-image-description {
+        font-size: 1.75vw;
+    }
+
+    /* Link to buy text */
+    .gallery-image-link {
+        font-size: 2.15vw;
+    }
+}
+
+/* Increasing font size at 768px */
+@media screen and (max-width: 768px) {
+    /* Image title text */
+    .gallery-image-name {
+        font-size: 4vw;
+    }
+    .gallery-image-link {
+        font-size: 3vw;
     }
 }

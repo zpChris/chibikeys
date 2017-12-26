@@ -66,7 +66,7 @@ body {
     display: none; /* This line prevents the dropdown from being shown regularly */
     position: relative;
     margin-right: 40px;
-    z-index: 999999 !important;
+    z-index: 1;
 }
 
 .header-dropdown-icon {
@@ -99,11 +99,11 @@ body {
 
 /* Specialized store button styling */
 #store-dropdown {
-    background-color: rgba(161, 217, 204, 0.1); /* TODO: is transparent, might not be an issue but make sure */
+    background-color: #f5fffd; /* TODO: is transparent, might not be an issue but make sure */
 }
 
 #store-dropdown:hover {
-    background-color: rgba(161, 217, 204, 0.25);
+    background-color: #ebfcf8;
 }
 
 /* Regular header menu items closer together at certain width (900px) */
@@ -136,7 +136,7 @@ body {
 */
 
 /* column container */
-.column-container {
+.column-slideshow-container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
@@ -151,13 +151,13 @@ body {
 }
 
 /* Row distance from top */
-.row {
+.row-slideshow {
     margin-top: 75px;
 }
 
 /* Column height */
-.column {
-    height: 400px;
+.column-slideshow {
+    height: auto;
 }
 
 /* LEFT SIDE OF INDEX */
@@ -304,30 +304,29 @@ input[type=text]:focus {
 
 /* Shrink column container, height at 1000px */
 @media screen and (max-width: 1000px) {
-    .column-container {
+    .column-slideshow-container {
         max-width: 800px;
     }
-    .column {
-        height: 350px;
+    .column-slideshow {
+        height: auto;
     }
 }
 
 /* LARGE REDESIGN, removal of columns, slideshow below central text */
 @media screen and (max-width: 850px) {
     /* Remove all column content */
-    .column-container {
+    .column-slideshow-container {
         display: none;
     }
     /* Frontpage text container */
     .index-frontpage-text {
         display: block;
-        max-width: 960px;
         margin: 0 auto;
         text-align: center;
         padding: 0 20px;
         position: relative;
         margin: 80px 0;
-        height: 350px;
+        height: auto;
     }
 }
 
@@ -346,7 +345,7 @@ input[type=text]:focus {
         padding: 0 20px;
         position: relative;
         margin: 20px 0;
-        height: 450px;
+        height: auto;
     }
     /* Input form taking up full screen */
     input[type=text] {
@@ -372,6 +371,7 @@ input[type=text]:focus {
     padding: 75px 0;
     width: 70%;
     text-align: center;
+    margin-bottom: 75px;
 }
 
 .index-large-text {
@@ -403,6 +403,167 @@ input[type=text]:focus {
         font-size: 30px;
     }
 }
+
+/*
+
+    INDEX GALLERY SECTION (uses row from index frontpage slideshow section
+
+*/
+
+/* Container over whole gallery */
+.index-gallery-container {
+    padding: 0 5%;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+/* Header text */
+.index-gallery-large-text {
+    margin-bottom: 5vh;
+}
+
+/* Wrapper class for each column */
+.column-gallery {
+    height: auto; /* Sets height to as large as the image :) */
+    width: 33.33333%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+/* Title of product */
+.gallery-image-name {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+
+/* Short description of product, maybe create small one/two-sentence story */
+.gallery-image-description {
+    display: none;
+    position: absolute;
+    padding-right: 5%;
+    margin: 0px;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+}
+
+/* Link to "Read more" and Buy now" */
+.gallery-image-link {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 1% 2%;
+    border: 1px solid white;
+    z-index: 1; /* Puts link/button above image */
+}
+.gallery-image-link:hover {
+    background: white;
+    color: black;
+}
+/* Two links, same styling above but different placement */
+.gallery-image-link-read {
+    top: 65%;
+    left: 10%;
+}
+.gallery-image-link-buy {
+    top: 65%;
+    left: 45%;
+}
+
+/* The images in the gallery */
+.gallery-image {
+    display: block;
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+/* On hover of column, gallery image name and description and other facets show */
+.gallery-inside-container:active .gallery-image-name, .gallery-inside-container:hover .gallery-image-name {
+    display: block;
+}
+/* On hover of column, gallery image name and description and other facets show */
+.gallery-inside-container:active .gallery-image-description, .gallery-inside-container:hover .gallery-image-description {
+    display: block;
+}
+/* On hover of column, gallery image name and description and other facets show */
+.gallery-inside-container:active .gallery-image-link, .gallery-inside-container:hover .gallery-image-link {
+    display: block;
+}
+/* On hover of column, gallery image opacity changes */
+.gallery-inside-container:active .gallery-image, .gallery-inside-container:hover .gallery-image {
+    opacity: 0.25;
+}
+/* On hover of column, background color slightly changes, slight tint */
+.gallery-inside-container:active, .gallery-inside-container:hover {
+    background: #333333;
+}
+
+/* INDEX GALLERY SCALING SECTION */
+
+/* Changing from three columns to two columns, create clickable boxes instead of normal grid */
+@media screen and (max-width: 1024px) {
+    .column-gallery {
+        width: 46%;
+        padding: 0 2%; /* Width of 40%, using percentages, 5% padding within images adds up to 100% */
+    }
+    .gallery-image {
+        height: auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        margin: 0 auto;
+        margin-bottom: 1.5vw;
+        margin-top: 1.5vw;
+    }
+    .gallery-image-name {
+        top: 10%;
+        left: 15%;
+    }
+    .gallery-image-description {
+        top: 30%;
+        left: 15%;
+        padding-right: 12.5%;
+    }
+    .gallery-image-link-read {
+        top: 65%;
+        left: 15%;
+    }
+    .gallery-image-link-buy {
+        top: 65%;
+        left: 50%;
+    }
+}
+
+/* Removing description, centering other elements at 768px */
+@media screen and (max-width: 768px) {
+    /* On hover of column, gallery image name and description and other facets show */
+    .gallery-inside-container:active .gallery-image-description, .gallery-inside-container:hover .gallery-image-description {
+        display: none;
+    }
+    /* Center product title */
+    .gallery-image-name {
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .gallery-image-link-read {
+        top: 47.5%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .gallery-image-link-buy {
+        top: 70%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
 
 /* Prevent selection of element */
 .no-select {
