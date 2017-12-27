@@ -334,6 +334,7 @@ input[type=text] {
 
 */
 
+/* Footer logo text */
 .footer-logo {
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
@@ -341,12 +342,14 @@ input[type=text] {
     color: #ff6c47;
 }
 
+/* Footer copyright text */
 .footer-copyright {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
+/* Styling for social media and Chibi Keys webpage links */
 .footer-link {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -354,16 +357,19 @@ input[type=text] {
     line-height: 2;
 }
 
+/* Subscribe explanation text (above text box and button) */
 .footer-subscribe-text {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
+/* Subscribe text box text */
 #footer-subscribe {
     font-size: 15px;
 }
 
+/* Footer subscription button text */
 .index-footer-subscription-button {
     font-family: sans-serif;
     font-size: 15px;

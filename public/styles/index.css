@@ -580,6 +580,7 @@ input[type=text]:focus {
     padding: 0 7.5%;
 }
 
+/* Overall styling per column */
 .column-footer {
     height: auto; /* Sets height to as large as the image :) */
     float: left;
@@ -588,6 +589,7 @@ input[type=text]:focus {
     padding: 40px 0;
 }
 
+/* Individual column custom widths */
 #footer-column-1 {
     width: 30%;
 }
@@ -601,24 +603,26 @@ input[type=text]:focus {
     width: 32.5%;
 }
 
+/* Chibi Keys logo */
 .footer-logo {
     margin: 0;
     padding: 0;
 }
 
+/* Basic design for social media and regular webpage links */
 .footer-link {
     display: inline;
     margin: 0;
 }
-
 .footer-link:hover {
     opacity: 0.5;
 }
-
+/* Social media logo sizing */
 .footer-link-media-logo {
     width: 16px;
 }
 
+/* Subscription section, partially inherited from container in frontpage */
 #footer-subscribe {
     width: 60%;
     padding: 12px 12px;
@@ -635,6 +639,7 @@ input[type=text]:focus {
     background-color: #c34fcf;
 }
 
+/* Container for design <1024px, items stacked on top of each other rather than column layout */
 .stacked-footer {
     display: none;
 }
@@ -645,6 +650,7 @@ input[type=text]:focus {
         display: none;
     }
 
+    /* Stacked footer main design */
     .stacked-footer {
         display: block;
         border-top: 2px solid #ff6c47;
@@ -654,38 +660,42 @@ input[type=text]:focus {
         text-align: center;
     }
 
+    /* Footer logo and copyright parts */
     .footer-logo-copyright-container {
         padding-top: 20px;
         padding-bottom: 30px;
     }
-
     .footer-copyright {
         padding-top: 10px;
         
         margin: 0;
     }
 
+    /* Footer links switch to horizontally aligned, margin separates items */
     .footer-link {
         margin: 0 10px;
     }
 
+    /* Container for Chibi Keys webpage links */
     .footer-page-link-container {
         padding-top: 30px;
         padding-bottom: 20px;
     }
 
+    /* Increase size of social media logos */
     .footer-link-media-logo {
         width: 24px;
     }
 
+    /* Container for social media links */
     .footer-media-link-container {
         padding: 10px 0;
     }
 
+    /* Footer subscription styling */
     .footer-subscription-container {
         padding: 20px 0;
     }
-
     #footer-subscribe {
         max-width: 250px;
     }
