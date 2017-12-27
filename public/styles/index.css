@@ -138,7 +138,7 @@ body {
 
 /* column container */
 .column-slideshow-container {
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -153,7 +153,7 @@ body {
 
 /* Row distance from top */
 .row-slideshow {
-    margin-top: 75px;
+    margin-top: 100px;
 }
 
 /* Column height */
@@ -326,7 +326,7 @@ input[type=text]:focus {
         text-align: center;
         padding: 0 20px;
         position: relative;
-        margin: 80px 0;
+        margin: 40px 0;
         height: auto;
     }
 }
@@ -369,7 +369,7 @@ input[type=text]:focus {
 
 .index-text-container {
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 150px 0;
     width: 70%;
     text-align: center;
     margin-bottom: 75px;

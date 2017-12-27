@@ -188,12 +188,17 @@ input[type=text] {
     }
 }
 @media screen and (max-width: 550px) {
+    /* Large text block */
+    .index-frontpage-large-text {
+        font-size: 7.5vw;
+    }
+    /* Input text box */
     input[type=text] {
         font-size: 20px;
     }
     /* Medium text block */
     .index-frontpage-medium-text {
-        font-size: 20px;
+        font-size: 4.75vw;
     }
 
 }
@@ -260,7 +265,7 @@ input[type=text] {
     }
 
     .index-large-text-button {
-        font-size: 22.5px;
+        font-size: 5vw;
     }
 }
 
