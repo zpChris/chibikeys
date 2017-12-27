@@ -4,7 +4,8 @@ body {
 
 /* container */
 .container {
-    margin: 0 8px;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 /* container, will have background gif at 850px */
@@ -282,7 +283,7 @@ input[type=text] {
     outline: none;
 }
 input[type=text]:focus {
-    border: 2px solid #ff6c47;
+    border: 2px solid #333333;
 }
 /* Subscription button paired with email form */
 .index-frontpage-subscription-button {
@@ -413,8 +414,8 @@ input[type=text]:focus {
 /* Container over whole gallery */
 .index-gallery-container {
     padding: 0 5%;
-    margin-bottom: 100px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 /* Header text */
@@ -482,23 +483,23 @@ input[type=text]:focus {
     transition: all 0.5s linear;
 }
 
-/* On hover of column, gallery image name and description and other facets show */
+/* On click (mobile) and hover of column, gallery image name and description and other facets show */
 .gallery-inside-container:active .gallery-image-name, .gallery-inside-container:hover .gallery-image-name {
     display: block;
 }
-/* On hover of column, gallery image name and description and other facets show */
+/* On click (mobile) and hover of column, gallery image name and description and other facets show */
 .gallery-inside-container:active .gallery-image-description, .gallery-inside-container:hover .gallery-image-description {
     display: block;
 }
-/* On hover of column, gallery image name and description and other facets show */
+/* On click (mobile) and hover of column, gallery image name and description and other facets show */
 .gallery-inside-container:active .gallery-image-link, .gallery-inside-container:hover .gallery-image-link {
     display: block;
 }
-/* On hover of column, gallery image opacity changes */
+/* On click (mobile) and hover of column, gallery image opacity changes */
 .gallery-inside-container:active .gallery-image, .gallery-inside-container:hover .gallery-image {
     opacity: 0.25;
 }
-/* On hover of column, background color slightly changes, slight tint */
+/* On click (mobile) and hover of column, background color slightly changes, slight tint */
 .gallery-inside-container:active, .gallery-inside-container:hover {
     background: #333333;
 }
@@ -509,7 +510,7 @@ input[type=text]:focus {
 @media screen and (max-width: 1024px) {
     .column-gallery {
         width: 46%;
-        padding: 0 2%; /* Width of 40%, using percentages, 5% padding within images adds up to 100% */
+        padding: 0 2%; /* Width of 46%, using percentages, 2% padding within images adds up to 100% */
     }
     .gallery-image {
         height: auto;
@@ -539,7 +540,7 @@ input[type=text]:focus {
 
 /* Removing description, centering other elements at 768px */
 @media screen and (max-width: 768px) {
-    /* On hover of column, gallery image name and description and other facets show */
+    /* On click (mobile) and hover of column, gallery image name and description and other facets show */
     .gallery-inside-container:active .gallery-image-description, .gallery-inside-container:hover .gallery-image-description {
         display: none;
     }
@@ -563,6 +564,134 @@ input[type=text]:focus {
         transform: translateX(-50%);
     }
 }
+
+/*
+
+    FOOTER
+
+*/
+
+/* Container over whole footer */
+.footer-columns {
+    display: block;
+    border-top: 2px solid #ff6c47;
+    background: #eeeeee;
+    position: relative;
+    padding: 0 7.5%;
+}
+
+.column-footer {
+    height: auto; /* Sets height to as large as the image :) */
+    float: left;
+    position: relative;
+    text-align: left;
+    padding: 40px 0;
+}
+
+#footer-column-1 {
+    width: 30%;
+}
+#footer-column-2 {
+    width: 17.5%;
+}
+#footer-column-3 {
+    width: 20%;
+}
+#footer-column-4 {
+    width: 32.5%;
+}
+
+.footer-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link {
+    display: inline;
+    margin: 0;
+}
+
+.footer-link:hover {
+    opacity: 0.5;
+}
+
+.footer-link-media-logo {
+    width: 16px;
+}
+
+#footer-subscribe {
+    width: 60%;
+    padding: 12px 12px;
+}
+.index-footer-subscription-button {
+    margin-left: 5px;
+    padding: 13px 15px;
+    color: white;
+    background-color: #cc73d6;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+.index-footer-subscription-button:hover {
+    background-color: #c34fcf;
+}
+
+.stacked-footer {
+    display: none;
+}
+
+/* Changing to stacked footer at 1024px */
+@media screen and (max-width: 1024px) {
+    .footer-columns {
+        display: none;
+    }
+
+    .stacked-footer {
+        display: block;
+        border-top: 2px solid #ff6c47;
+        background: #eeeeee;
+        position: relative;
+        padding: 0 7.5%;
+        text-align: center;
+    }
+
+    .footer-logo-copyright-container {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .footer-copyright {
+        padding-top: 10px;
+        
+        margin: 0;
+    }
+
+    .footer-link {
+        margin: 0 10px;
+    }
+
+    .footer-page-link-container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footer-link-media-logo {
+        width: 24px;
+    }
+
+    .footer-media-link-container {
+        padding: 10px 0;
+    }
+
+    .footer-subscription-container {
+        padding: 20px 0;
+    }
+
+    #footer-subscribe {
+        max-width: 250px;
+    }
+
+}
+
 
 
 /* Prevent selection of element */

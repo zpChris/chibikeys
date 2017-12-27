@@ -327,3 +327,44 @@ input[type=text] {
         font-size: 3vw;
     }
 }
+
+/* 
+
+    FOOTER
+
+*/
+
+.footer-logo {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ff6c47;
+}
+
+.footer-copyright {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.footer-link {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 2;
+}
+
+.footer-subscribe-text {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#footer-subscribe {
+    font-size: 15px;
+}
+
+.index-footer-subscription-button {
+    font-family: sans-serif;
+    font-size: 15px;
+}
