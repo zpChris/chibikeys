@@ -190,7 +190,7 @@ input[type=text] {
 @media screen and (max-width: 550px) {
     /* Large text block */
     .index-frontpage-large-text {
-        font-size: 7.5vw;
+        font-size: 7vw;
     }
     /* Input text box */
     input[type=text] {
