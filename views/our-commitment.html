@@ -1,1 +1,254 @@
-hello
+<!doctype html>
+<html>
+    <head>
+        <title>Chibi Keys</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Header and footer included in index, separate at some point? -->
+        <link rel="stylesheet" href="styles/index.css"/>
+        <link rel="stylesheet" href="styles/index_typography.css"/>
+        <link rel="stylesheet" href="styles/our-commitment_typography.css"/>
+        <link rel="stylesheet" href="styles/our-commitment.css"/>
+    </head>
+    <body>
+
+        <div class="our-commitment-image-container"> <!-- Has background image -->
+            <div class="container">
+
+                <!--
+                    
+                    HEADER
+                
+                -->
+        
+                <nav class="header">
+                    <span class="header-logo">
+                        <a href="/">Chibi Keys</a>
+                    </span>
+        
+                    <!-- Header when screen size is <768px -->
+                    <div class="header-dropdown-container">
+                        <div class="header-dropdown-icon">
+                            &#9776;
+                        </div>
+                        <!-- The div's are outside in the a's in this section so the whole button is a link -->
+                        <div class="header-dropdown">
+                            <!-- Has id of store-dropdown for specialized styling -->
+                            <a href="/store">
+                                <div class="header-dropdown-item" id="store-dropdown">Store</div>
+                            </a>
+                            <a href="/keycaps">
+                                <div class="header-dropdown-item">Keycaps</div>
+                            </a>
+                            <a href="/our-commitment">
+                                <div class="header-dropdown-item">Our Commitment</div>
+                            </a>
+                            <a href="/blog">
+                                <div class="header-dropdown-item">Blog</div>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Regular header when screen size is >768px -->
+                    <div class="header-menu">
+                        <!-- Has id of store-menu for specialized styling -->
+                        <div class="header-menu-item">
+                            <a href="/store" id="store-menu">Store</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/blog">Blog</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/our-commitment">Our Commitment</a>
+                        </div>
+                        <div class="header-menu-item">
+                            <a href="/keycaps">Keycaps</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- 
+
+                    OUR COMMITMENT FRONTPAGE IMAGE W/ TEXT SECTION
+
+                -->
+                
+                <div class="commitment-frontpage-text-container">
+                    <p class="commitment-frontpage-text">
+                        We believe no one should ever go a day feeling hopeless.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- COMMITMENT QUOTE (W/ QUOTE AUTHOR) -->
+
+        <div class="commitment-quote-background">
+            <div class="commitment-quote-container">
+                <p class="commitment-quote-text">
+                    "Where there is charity and wisdom, there is neither fear nor ignorance."
+                </p>
+                <p class="commitment-quote-author">
+                    - Francis of Assisi
+                </p>
+            </div>
+        </div>
+
+        <!-- DESCRIPTION OF OUR COMMITMENT -->
+
+        <div class="commitment-description-background">
+            <div class="commitment-description-container">
+                <p class="commitment-description-header">
+                    We promise to donate 50% of our earnings to charity: water
+                </p>
+                <p class="commitment-description-body">
+                    It is the rich soil, clean water and nourishing sunshine that
+                    make our ingredients grow, and the power of nature that makes
+                    them so effective. Yet our planet is fragile. We must be mindful
+                    of the resources we use, and minimise our impact on the earth. In 
+                    our efforts to become more sustainable, we are always striving for
+                    cleaner, greener ways of doing things.
+                </p>
+                <p class="commitment-description-header">
+                    We are actively reducing our footprint
+                </p>
+                <p class="commitment-description-body">
+                    We reuse and recycle as much as we can – our current target is a 
+                    20 per cent reduction in energy, waste and water consumption by 2015 
+                    (from 2010 levels) per product produced. We are proud to say that as 
+                    of 2013, more than 90 per cent of Jurlique’s production site waste is 
+                    reused, recycled or energy-recovered.
+                </p>
+                <p class="commitment-description-header">
+                    We are open to new ideas
+                </p>
+                <p class="commitment-description-body">
+                    If you have any questions about Chibi Keys' commitment, or any suggestions
+                    for different charities or causes you think we should support, please
+                    <a href="/contact" id="commitment-description-body-contact">contact us</a>.
+                    We love to hear your ideas!
+                </p>
+            </div>
+        </div>
+
+        <!-- COMMITMENT VISIT OUR BLOG FOR MORE INFO AND UPDATES -->
+
+        <div class="commitment-blog-background">
+            <div class="commitment-blog-container">
+                <p class="commitment-blog-text">
+                    We're on a mission to help make the world a better place. We strive to 
+                    help others in need. Read more about our commitment on our blog.
+                </p>
+                <a href="/blog" id="commitment-blog-button-link">Our Blog</a>
+            </div>
+        </div>
+
+        <!--
+
+            FOOTER
+
+        -->
+
+        <!-- FOOTER FOR >1024px, four column layout -->
+        <div class="footer-columns">
+            <div class="row row-footer">
+                <!-- Logo and copyright -->
+                <div class="column-footer" id="footer-column-1">
+                    <div class="footer-inside-container">
+                        <span class="footer-logo">
+                            <a href="/">Chibi Keys</a>
+                        </span>
+                        <p class="footer-copyright">Copyright © Chibi Keys 2017</p>
+                    </div>
+                </div>
+                <!-- Links to various pages -->
+                <div class="column-footer" id="footer-column-2">
+                    <div class="footer-inside-container">
+                        <a href="about-us" class="footer-link">About Us</a>
+                        <br>
+                        <a href="contact" class="footer-link">Contact</a>
+                        <br>
+                        <a href="blog" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <!-- Links to various social media pages -->
+                <div class="column-footer" id="footer-column-3">
+                    <div class="footer-inside-container">
+                        <a href="https://www.facebook.com/chibikeys/" class="footer-link">
+                            <img src="assets/facebook-footer-logo.png" class="footer-link-media-logo"> Facebook
+                        </a>
+                        <br>
+                        <a href="" class="footer-link">
+                            <img src="assets/instagram-footer-logo.png" class="footer-link-media-logo"> Instagram
+                        </a>
+                        <br>
+                        <a href="" class="footer-link">
+                            <img src="assets/reddit-footer-logo.png" class="footer-link-media-logo"> Reddit
+                        </a>
+                        <br>
+                        <a href="" class="footer-link">
+                            <img src="assets/twitter-footer-logo.png" class="footer-link-media-logo"> Twitter
+                        </a>
+                    </div>
+                </div>
+                <!-- Subscription block -->
+                <div class="column-footer" id="footer-column-4">
+                    <div class="footer-inside-container">
+                        <div class="footer-subscribe-text">
+                            Subscribe to receive new keycap design updates.
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Enter your email" id="footer-subscribe">
+                            <a href="" class="index-footer-subscription-button">Subscribe</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stacked version of footer, @ 1024px -->
+        <div class="stacked-footer">
+            <div class="footer-page-link-container">
+                <a href="about-us" class="footer-link">About Us</a>
+                <a href="contact" class="footer-link">Contact</a>
+                <a href="blog" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-media-link-container">
+                <a href="https://www.facebook.com/chibikeys/" class="footer-link">
+                    <img src="assets/facebook-footer-logo.png" class="footer-link-media-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="assets/instagram-footer-logo.png" class="footer-link-media-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="assets/reddit-footer-logo.png" class="footer-link-media-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="assets/twitter-footer-logo.png" class="footer-link-media-logo">
+                </a>
+            </div>
+            <div class="footer-subscription-container">
+                <div class="footer-subscribe-text">
+                    Subscribe to receive new keycap design updates.
+                </div>
+                <form>
+                    <input type="text" placeholder="Enter your email" id="footer-subscribe">
+                    <a href="" class="index-footer-subscription-button">Subscribe</a>
+                </form>
+            </div>
+            <div class="footer-logo-copyright-container">
+                <span class="footer-logo">
+                    <a href="/">Chibi Keys</a>
+                </span>
+                <p class="footer-copyright">Copyright © Chibi Keys 2017</p>
+            </div>
+        </div>
+
+        <!-- Links to index.js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
+

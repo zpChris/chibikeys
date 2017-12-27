@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* FRONTPAGE TEXT (W/ IMAGE BACKGROUND */
+
+.commitment-frontpage-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .commitment-frontpage-text {
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .commitment-frontpage-text {
+        font-size: 7.5vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .commitment-frontpage-text {
+        font-size: 9vw;
+    }
+}
+
+/* QUOTE (AND PERSON WHO QUOTED) TEXT */
+
+.commitment-quote-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vw;
+    line-height: 1.6;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+}
+
+.commitment-quote-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: black;
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    .commitment-quote-text {
+        font-size: 30px;
+    }
+    .commitment-quote-author {
+        font-size: 20px;
+    }
+}
+
+/* OUR COMMITMENT DESCRIPTION TEXTS */
+
+.commitment-description-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.commitment-description-body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Contact in-line link */
+#commitment-description-body-contact {
+    color: #69dbc1;
+}
+#commitment-description-body-contact:hover {
+    color: #31d3ad;
+}
+
+@media screen and (max-width: 768px) {
+    .commitment-description-body {
+        font-size: 16px;
+    }
+}
+
+/* OUR COMMITMENT "VISIT BLOG" SECTION W/ BACKGROUND IMAGE */
+
+.commitment-blog-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    line-height: 1.4;
+}
+
+#commitment-blog-button-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 400px) {
+    .commitment-blog-text {
+        font-size: 25px;
+    }
+    #commitment-blog-button-link {
+        font-size: 22.5px;
+    }
+}

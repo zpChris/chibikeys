@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+/* FRONTPAGE BACKGROUND/TEXT FOR OUR COMMITMENT */
+
+/* background image on frontpage for "our commitment" */
+.our-commitment-image-container {
+    background: url("../assets/our-commitment-background-image.png");
+    background-size: cover;
+    background-position: center center;
+}
+/* Frontpage text container */
+.commitment-frontpage-text-container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+/* Removing top and bottom margins for text */
+.commitment-frontpage-text {
+    margin: 0;
+}
+
+/* VARIOUS SIZINGS FOR TEXT CONTAINER */
+@media screen and (max-width: 768px) {
+    /* Shift image down 20px so text is realigned over appropiate area */
+    .commitment-frontpage-text-container {
+        padding-top: 80px;
+        padding-bottom: 170px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .commitment-frontpage-text-container {
+        width: 80%;
+    }
+}
+
+/* QUOTE (AND PERSON WHO QUOTED) SECTION, self-explanatory names */
+
+.commitment-quote-background {
+    background: #eeeeee;
+}
+
+.commitment-quote-container {
+    padding: 5% 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.commitment-quote-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.commitment-quote-author {
+    margin: 0;
+}
+
+/* Changing padding on containers as width decreases */
+@media screen and (max-width: 768px) {
+    .commitment-quote-container {
+        padding: 7.5% 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .commitment-quote-container {
+        padding: 12.5% 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .commitment-quote-container {
+        padding: 15% 0;
+    }
+}
+
+/* OUR COMMITMENT DESCRIPTION SECTION, self-explanatory names */
+
+.commitment-description-background {
+    background: #ffffff;
+}
+
+.commitment-description-container {
+    padding: 5% 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.commitment-description-header {
+    margin: 20px 0;
+}
+.commitment-description-body {
+    margin: 10px 0;
+}
+
+/* Changing padding on containers as width decreases */
+@media screen and (max-width: 768px) {
+    .commitment-description-container {
+        padding: 7.5% 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .commitment-description-container {
+        padding: 10% 0;
+    }
+}
+
+/* OUR COMMITMENT "VISIT BLOG" SECTION W/ BACKGROUND IMAGE */
+
+.commitment-blog-background {
+    background: url("../assets/commitment-blog-background-image.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.commitment-blog-container {
+    padding: 10% 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.commitment-blog-text {
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+#commitment-blog-button-link {
+    padding: 10px 20px;
+    margin: 0;
+    background: #ff6c47;
+}
+#commitment-blog-button-link:hover {
+    background: #c0300c;
+}
+
+@media screen and (max-width: 768px) {
+    .commitment-blog-container {
+        padding: 12.5% 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .commitment-blog-container {
+        padding: 25% 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+}
