@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 /* FRONTPAGE BACKGROUND/TEXT FOR OUR COMMITMENT */
@@ -145,5 +146,3 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-}

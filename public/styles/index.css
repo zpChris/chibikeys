@@ -487,19 +487,15 @@ input[type=text]:focus {
 .gallery-inside-container:active .gallery-image-name, .gallery-inside-container:hover .gallery-image-name {
     display: block;
 }
-/* On click (mobile) and hover of column, gallery image name and description and other facets show */
 .gallery-inside-container:active .gallery-image-description, .gallery-inside-container:hover .gallery-image-description {
     display: block;
 }
-/* On click (mobile) and hover of column, gallery image name and description and other facets show */
 .gallery-inside-container:active .gallery-image-link, .gallery-inside-container:hover .gallery-image-link {
     display: block;
 }
-/* On click (mobile) and hover of column, gallery image opacity changes */
 .gallery-inside-container:active .gallery-image, .gallery-inside-container:hover .gallery-image {
     opacity: 0.25;
 }
-/* On click (mobile) and hover of column, background color slightly changes, slight tint */
 .gallery-inside-container:active, .gallery-inside-container:hover {
     background: #333333;
 }

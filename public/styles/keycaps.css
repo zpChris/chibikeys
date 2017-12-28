@@ -1,0 +1,155 @@
+body {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/* FRONTPAGE BACKGROUND W/ KEYCAP */
+
+/* background image of keycap for frontpage "keycaps" */
+.keycaps-image-container {
+    background: url("../assets/index-background.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Frontpage text container */
+.keycaps-frontpage-text-container {
+    padding: 0 10%;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.keycaps-frontpage-featured-text, .keycaps-frontpage-header {
+    margin: 0;
+}
+
+.keycaps-frontpage-featured-text {
+    padding-bottom: 15px;
+}
+
+.keycaps-frontpage-text-container:hover .keycaps-frontpage-header {
+    text-decoration: underline;
+}
+
+/* KEYCAPS PRODUCT GALLERY */
+
+/* Container over whole gallery */
+.keycaps-product-gallery-container {
+    padding: 5% 5%;
+    position: relative;
+}
+
+/* Column wrapper class */
+.keycaps-product-column {
+    height: 35vw;
+    width: 33.33333%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+/* Inside container of column, controls dimensions and any possible hover actions */
+.keycaps-product-inside-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.keycaps-product-inside-container:hover {
+    cursor: pointer;
+}
+
+
+/* Div that has image background of keycap */
+.keycaps-product-image {
+    height: 25vw;
+    margin-bottom: 15px;
+}
+
+/* Different images for different divs */
+#one-reindeer-fiesta-product-image {
+    background: url("../assets/red-flame-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#two-bubba-keycap-product-image {
+    background: url("../assets/rosette-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#three-the-grace-of-nature-product-image {
+    background: url("../assets/koi-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#four-chairs-are-cool-product-image {
+    background: url("../assets/constellation-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#five-the-grace-of-nature-product-image {
+    background: url("../assets/invader-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#six-reindeer-fiesta-product-image {
+    background: url("../assets/red-flame-artisan-keycap.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* Moving to two elements per column at 900px */
+@media screen and (max-width: 900px) {
+    .keycaps-product-column {
+        width: 50%;
+        height: 47.5vw;
+    }
+    .keycaps-product-image {
+        height: 35vw;
+        margin-bottom: 10px;
+    }
+    .keycaps-product-name {
+        padding: 0;
+    }
+}
+
+/* Changing front image padding at 600px */
+@media screen and (max-width: 600px) {
+    .keycaps-frontpage-text-container {
+        padding: 0 3.75%;
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+    .keycaps-product-column {
+        height: 52.5vw;
+    }
+    .keycaps-product-image {
+        height: 40vw;
+        margin-bottom: 10px;
+    }
+    .keycaps-product-name {
+        padding: 0;
+    }
+}
+
+/* Changing front image padding at 450px */
+@media screen and (max-width: 450px) {
+    .keycaps-frontpage-text-container {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .keycaps-product-column {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .keycaps-product-image {
+        height: 60vw;
+        margin-bottom: 15px;
+    }
+}
