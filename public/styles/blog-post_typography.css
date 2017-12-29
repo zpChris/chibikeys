@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Stylings before actual blog */
+.blog-post-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+.blog-post-date-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+/* Front header, some sort of general statement that relates to the article */
+.blog-post-front-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    text-align: left;
+}
+
+/* The header used throughout the blog post */
+.blog-post-main-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: black;
+    text-align: left;
+}
+
+/* Body (main text) */
+.blog-post-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    text-align: left;
+}
+
+/* Button styling */
+.blog-post-button-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+}
+.blog-post-button-link:hover {
+    color: white;
+}
+
+/* Next article widget stylings */
+.blog-post-next-article-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22.5px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+}
+.blog-post-next-article-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    text-align: left;
+}
+.blog-post-next-article-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3197d6;
+    text-align: left;
+}

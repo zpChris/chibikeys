@@ -480,7 +480,7 @@ input[type=text]:focus {
 .gallery-image {
     display: block;
     width: 100%;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
 }
 
 /* On click (mobile) and hover of column, gallery image name and description and other facets show */

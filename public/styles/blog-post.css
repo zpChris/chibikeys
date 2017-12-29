@@ -1,0 +1,127 @@
+/* This file can be used for any blog posts in the future, add any relevant stylings to this css file */
+
+.blog-post-container {
+    margin: 40px auto;
+    max-width: 768px;
+    padding: 0 2.5%;
+}
+
+/* Title stuff before blog post */
+.blog-post-title {
+    margin: 10px 0;
+}
+.blog-post-date-text {
+    margin-top: 10px 0;
+}
+.blog-post-image {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+}
+/* Social media links */
+.blog-post-social-media {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blog-post-media-logo {
+    width: 40px;
+    opacity: 0.5;
+    margin: 0 10px;
+    transition: ease 0.25s;
+}
+.blog-post-media-logo:hover {
+    opacity: 1;
+}
+
+/* Front header, some sort of general statement that relates to the article */
+.blog-post-front-header {
+    margin: 10px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* The header used throughout the blog post */
+.blog-post-main-header {
+    padding: 15px 0;
+}
+/* Body (main text) */
+.blog-post-body {
+    padding: 15px 0;
+}
+
+/* Button styling */
+.blog-post-button-container {
+    margin: 30px 0;
+    text-align: center;
+}
+.blog-post-button-link {
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px solid green;
+    transition: ease 0.1s;
+}
+.blog-post-button-link:hover {
+    background: green;
+}
+
+
+
+/* Next article snippet that goes at the end of the blog. Acts as a row/column situation */
+/* Container, also acts as 'row' class */
+.blog-post-next-article {
+    display: block;
+    height: auto;
+    padding: 30px 40px;
+    border: 1px solid #eeeeee;
+    margin-top: 50px;
+    transition: ease 0.25s;
+}
+.blog-post-next-article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.blog-post-next-article:hover {
+    border: 1px solid #3197d6;
+}
+
+/* Acts as a column, holds the image */
+.blog-post-next-article-image-container {
+    display: table-cell;
+    position: relative;
+    width: 50%;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+/* Actual image */
+.blog-post-next-article-image {
+    width: 100%;
+}
+
+/* Other column, holds the text */
+.blog-post-next-article-text {
+    display: table-cell;
+    width: 50%;
+}
+.blog-post-next-article-header {
+    padding-bottom: 20px;
+}
+.blog-post-next-article-description {
+    padding-bottom: 20px;
+}
+
+/* Switch to image on top, text below layout @ 600px */
+@media screen and (max-width: 600px) {
+    .blog-post-next-article-image-container {
+        width: 100%;
+        display: block;
+    }
+    .blog-post-next-article-image {
+        margin-bottom: 20px;
+    }
+    .blog-post-next-article-text {
+        width: 100%;
+        display: block;
+    }
+}
