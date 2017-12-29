@@ -500,6 +500,11 @@ input[type=text]:focus {
     background: #333333;
 }
 
+/* Image becomes link, activated at <500px */
+.gallery-full-image-link {
+    display: none;
+}
+
 /* INDEX GALLERY SCALING SECTION */
 
 /* Changing from three columns to two columns, create clickable boxes instead of normal grid */
@@ -558,6 +563,18 @@ input[type=text]:focus {
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-inside-container {
+        display: none;
+    }
+    .gallery-full-image-link {
+        display: block;
+    }
+    .gallery-image:hover {
+        box-shadow: 0 3px 9px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
     }
 }
 
